@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form</title>
+  <link rel="stylesheet" href="./styles.css /">
+  <!-- <script src="./index.js"></script> -->
+  
+  <style>
+    input{
+      display: block;
+      margin: 0 0 10px 0;
+    }
+    </style>
+  </head>
+
+<body>
+  <form metod='post' action="/login">
+
+    <!-- Логин -->
+    <label>
+      <span>Введите логин</span>
+      <input
+        type="email"
+        name="login"
+        placeholder="Ваша почта"
+        minlength="5"
+      />
+    </label>
+    
+    <!-- Логин -->
+    <label>
+      <span>Введите пароль</span>
+      <input
+      type="password"
+      name="password"
+      placeholder="Введите пароль"
+      />
+    </label>
+
+    <button type="submit">
+      Войти
+    </button>
+  </form>
+  <form method="get" action=""></form>
+</body>
+</html>
