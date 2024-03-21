@@ -18,27 +18,47 @@
 <body>
   <form metod='post' action="/login">
 
-    <!-- Логин -->
+    <!-- login -->
     <label>
       <span>Введите логин</span>
       <input
-        type="email"
+        type="text"
         name="login"
-        placeholder="Ваша почта"
-        minlength="5"
+        placeholder="enter login (min - 4)"
+        minlength="2"
+        required
       />
     </label>
-    
-    <!-- Логин -->
+    <!-- password -->
     <label>
       <span>Введите пароль</span>
       <input
       type="password"
       name="password"
-      placeholder="Введите пароль"
+      placeholder="enter password (min - 8)"
+      required
       />
     </label>
-
+    <!--verify password -->
+    <label>
+      <span>Проверьте пароль</span>
+      <input type="password" name="password" placeholder="verify password" required
+      />
+    </label>
+    <!-- e-mail -->
+    <label for="email">Enter your email
+      <input type="email" id="email" size="30" required />
+    </label>
+    
+    <!-- language -->
+  <label for="lang">Choose a language:
+  <select name="language" id="lang">
+    <option value="">--choose a language--</option>
+      <option value="ru">Ru</option> <option value="en-us">En-US</option> <option value="en-gb">En-GB</option> <option value="de">De</option> <option value="fr">Fr</option> <option value="es">Es</option>
+  </select>
+  </label>
+  <br>
+  <br>
     <button type="submit">
       Войти
     </button>
